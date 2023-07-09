@@ -1,0 +1,43 @@
+.home{
+    margin-top: 2rem;
+    margin-left:0;
+    margin: 3rem;
+}
+.running{
+    padding: 1rem;
+    border: 1px solid;
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 6px;
+}
+.future{
+    padding: 1rem;
+    border: 1px solid;
+    width: 100%;
+    border-radius: 6px;
+}
+.future h2{
+    text-align: center;
+}
+.running h2{
+    margin: 0;
+    text-align: center;
+}
+.Name{
+    width: 35rem;
+}
+.StartTime{
+    width: 20rem;
+}
+.EndTime{
+    width: 20rem;
+}
+.Duration{
+    width: 10rem;
+}
+.Site{
+    width: 7rem;
+}
+.row{
+    height: 2rem;
+}

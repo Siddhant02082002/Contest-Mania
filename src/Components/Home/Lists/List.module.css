@@ -1,0 +1,11 @@
+.list ul{
+    list-style: none;
+}
+.list{
+    display: flex;
+}
+
+.start{
+    text-align: left;
+}
+
