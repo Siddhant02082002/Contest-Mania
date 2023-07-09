@@ -1,6 +1,5 @@
 import classes from './Home.module.css';
 import React, { useState, useEffect } from 'react';
-import List from './Lists/List';
 
 const Home = props => {
     const [contests, setContests] = useState([]);
@@ -30,7 +29,7 @@ const Home = props => {
     const AllContestOngoing = contests.map((contest, index) => (
         contest.status === "CODING" ? (
             <tr key={index} className={classes.row}>
-                <td>{contest.name}</td>
+                <a href={contest.url}><td>{contest.name}</td></a>
                 <td>{formatDateTime(contest.start_time)}</td>
                 <td>{formatDateTime(contest.end_time)}</td>
                 <td>{durationToHrsMin(contest.duration)}</td>
@@ -41,7 +40,7 @@ const Home = props => {
     const AllContestFuture = contests.map((contest, index) => (
         contest.status ==="BEFORE" ? (
             <tr key={index} className={classes.row}>
-                <td>{contest.name}</td>
+                <a href={contest.url}><td>{contest.name}</td></a>
                 <td>{formatDateTime(contest.start_time)}</td>
                 <td>{formatDateTime(contest.end_time)}</td>
                 <td>{durationToHrsMin(contest.duration)}</td>
